@@ -1,0 +1,426 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style-type:none;  
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .navleft{
+    display: flex;
+    padding: 8px 12px;
+   
+}
+.navbar .navleft li{
+    padding: 6px 12px;
+    font-size: 17px;
+}
+.navbar .navright{
+    padding: 8px 12px;
+}
+.navbar .navright li{
+    padding: 6px 12px;
+    font-size: 17px;
+}
+.navbar a:hover{
+    background-color:white;
+    padding: 12px 12px;
+}
+.navbar  li {
+    margin: 0 10px; /* Space between items */
+  }
+
+
+#Rooms{
+    width: 100%;
+    height:Auto;
+    position: relative;
+}
+#Rooms img{
+    width: 100%;
+    height: Auto;
+}
+#Rooms > .on-img{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    background-color:white;
+    width: 45%;
+    height: auto;
+    margin: 8px 20px;
+    border-radius: 10px;
+}
+#Rooms > .on-img > .Hotel-Name{
+    background-color:orange;
+    height: 100px;
+    padding: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+}
+#Rooms > .on-img > .Hotel-Name p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#Rooms > .on-img > .Details form{
+    margin: 20px;
+}
+#Rooms > .on-img > .Details > .form > .form1{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#Rooms > .on-img > .Details > .form > .form1 > .Half1{
+    display: flex;
+    flex-direction: column;
+}
+#Rooms > .on-img > .Details > .form > .form1 > .Half1 input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+#Rooms > .on-img > .Details > .form > .form1 > .Half2{
+    display: flex;
+    flex-direction: column;
+    
+}
+#Rooms > .on-img > .Details > .form > .form1 > .Half2 input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+#Rooms > .on-img > .Details > .form > .form2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#Rooms > .on-img > .Details > .form > .form2 > .Half1{
+    display: flex;
+    flex-direction: column;
+}
+#Rooms > .on-img > .Details > .form > .form2 > .Half1 input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+#Rooms > .on-img > .Details > .form > .form2 > .Half2{
+    display: flex;
+    flex-direction: column;
+    
+}
+#Rooms > .on-img > .Details > .form > .form2 > .Half2 input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+#Rooms > .on-img > .Details > .form > .Button{
+    margin: 10px;
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 170px;
+    background-color:green;
+    color: white;
+}
+#Rooms > .on-img > .Details > .form > button:hover{
+    background-color:darkolivegreen;
+}
+.Contant{
+    background-color:lavender;
+}
+.Contant > #Rooms1{
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Contant > #Rooms1 h1,p{
+    margin: 0;
+    padding: 0;
+}
+.Contant > .Rooms2{
+    padding: 0px 15px;
+    display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.Contant > .Rooms2 > .Checkin input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+.Contant > .Rooms2 > .Checkout input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+.Contant > .Rooms2 > .Adult input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+.Contant > .Rooms2 > .Kids input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+}
+.Contant > .Rooms2 >.Button button{
+    width: 150px;
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+}
+.Contant > .Rooms2 >.Button button:hover{
+    background-color: gray;
+}
+.Contant > .Rooms2 >.Checkin,.Checkout,.Adult,.Kids,.Button{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Contant > .Rooms3{
+    padding: 16px 15px;
+    
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Contant > .Rooms3 img{
+    width: 400px;
+    height: 270px;
+}
+.Contant > .Rooms3 > .img1{
+    background-color: white;
+}
+.Contant > .Rooms3 > .img1 > .img1_1{
+    padding: 10px 16px;
+}
+.Contant > .Rooms3 > .img1 > .img1_1 button{
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+}
+.Contant > .Rooms3 > .img2{
+    background-color: white;
+}
+.Contant > .Rooms3 > .img2 > .img1_2{
+    padding: 10px 16px;
+}
+.Contant > .Rooms3 > .img2 > .img1_2 button{
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+}
+.Contant > .Rooms3 > .img3{
+    background-color: white;
+}
+.Contant > .Rooms3 > .img3 > .img1_3{
+    padding: 16px 16px;
+}
+.Contant > .Rooms3 > .img3 > .img1_3 button{
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+}
+.Contant > #Rooms4{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Contant > #Rooms4 img{
+    width: 100%;
+}
+.Contant > #Rooms4 > .Half1{
+    padding: 0px 6px;
+    width: 400px;
+}
+.Contant > #Rooms4 > .Half2{
+    width: 800px;
+    padding: 0px 6px;
+}
+.Contant > .Rooms5 {
+    margin: 32px 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Contant > .Rooms6{
+    padding: 16px;
+   
+}
+.Contant > .Rooms6 h1{
+     margin: 0px;
+}
+
+.Contant > .Rooms7{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Contant > .Rooms7 > .Half1 img{
+    width: 600px;
+    height: 500px;
+    padding: 0px 10px;
+    
+}
+.Contant > .Rooms7 > .Half1 p{
+    position: absolute;
+    left: 60px;
+    bottom: 25px;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+}
+.Contant > .Rooms7 > .Half2 img{
+    width:295px ;
+    height: 242px; 
+    padding: 0px 10px;
+    padding-bottom: 10px;
+}
+.Contant > .Rooms7 > .Half2 > .Half2_1{
+    display: flex;
+    
+}
+.Contant > .Rooms7 > .Half2 > .Half2_1 > .Half2_1_1 p{
+    position: absolute;
+    top: 220px;
+    left: 650px;
+    font-size: 20px;
+    color: white;
+    
+}
+.Contant > .Rooms7 > .Half2 > .Half2_1 > .Half2_1_2 p{
+    position: absolute;
+    top: 220px;
+    left: 970px;
+    font-size: 20px;
+    color: white;
+    
+}
+.Contant > .Rooms7 > .Half2 > .Half2_2{
+    display: flex
+}
+.Contant > .Rooms7 > .Half2 > .Half2_2 > .Half2_2_1 p{
+    position: absolute;
+    top: 470px;
+    left: 650px;
+    font-size: 20px;
+    color: white;
+}
+.Contant > .Rooms7 > .Half2 > .Half2_2 > .Half2_2_2 p{
+    position: absolute;
+    top: 470px;
+    left: 970px;
+    font-size: 20px;
+    color: white;
+}
+.Contant > .Rooms8{
+    margin: 32px 0px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    background-color:gray;
+    color: white;
+}
+.Contant > .Rooms8 input{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+}
+.Contant > .Rooms8 button{
+    font-size: 16px; /* Input text size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px;
+    padding: 8px;
+    width: 200px;
+    background-color: rgb(233, 128, 128);
+    color: white;
+}
+.Contant > .Rooms8 button:hover{
+    background-color: darkgray;
+}
+.Contant > .Rooms8:hover{
+    background-color: black;
+}
+.Contant > #Rooms9{
+    flex-direction: column;
+    padding: 0px 16px;
+}
+.Contant > #Rooms9 form{
+    padding-top: 20px;
+
+}
+.Contant > #Rooms9 input{
+    font-size: 16px; /* Input text size */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px;
+      padding: 14px;
+      width: 1200px;
+}
+.Contant > #Rooms9 p{
+    padding-bottom: 25px;
+}
+.Contant > #Rooms9 button{
+    font-size: 16px; /* Input text size */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px;
+      padding: 8px;
+      width: 200px;
+      background-color: black;
+      color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+   
+}
+footer h3{
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
