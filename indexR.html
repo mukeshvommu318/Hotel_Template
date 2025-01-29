@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Include Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+                /* Custom styles for Book Now button */
+        
+        
+        #maindiv{
+            padding: 0px;
+            
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #ddd;  /* Change this color as per your preference */
+            color: black;  /* Optional: Change text color on hover */
+            border-radius: 4px;  /* Optional: Add rounded corners */
+        }
+
+        /* Optional: Adjust the Book Now button hover effect */
+        .navbar-nav .nav-link:hover {
+            background-color:#63E6BE;  /* Same color as the original Book Now button */
+        }
+        .navbar-nav .nav-link{
+            color: black;
+        }
+
+
+        #Rooms {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        
+        #Rooms img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .on-img {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            background-color: white;
+            width: 45%;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .Hotel-Name {
+            background-color: orange;
+            height: 80px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .Hotel-Name p {
+            color: white;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .Button {
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .Button:hover {
+            background-color: darkolivegreen;
+        }
+
+        /* Custom font size for input fields */
+        input[type="text"], input[type="number"] {
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+        }
+
+        /* Adding margins for responsiveness */
+        .form-container {
+            margin-top: 10px;
+        }
+
+        
+        /* Keep this part if needed for custom styling */
+        .Contant > .Rooms3 {
+            padding: 16px 15px;
+        }
+
+        .Contant > .Rooms3 .img1, .Contant > .Rooms3 .img2, .Contant > .Rooms3 .img3 {
+            background-color: white;
+        }
+
+        .Contant > .Rooms3 .img1_1, .Contant > .Rooms3 .img1_2, .Contant > .Rooms3 .img1_3 {
+            padding: 10px 16px;
+        }
+
+        /* Use Bootstrap's button styles */
+        .Contant > .Rooms3 button {
+            font-size: 16px;
+        }
+
+        /* Optional Custom Styles */
+        .Contant > #Rooms4 {
+            padding: 0px 10px;
+        }
+
+        .Contant > #Rooms4 img {
+            width: 100%;
+            height: auto; /* Ensures image scales correctly */
+        }
+
+        .Contant > #Rooms4 > .Half1 {
+            padding: 0px 6px;
+        }
+
+        .Contant > #Rooms4 > .Half2 {
+            padding: 0px 6px;
+        }
+
+        /* Optional: Style for icons inside the "We Accept" section */
+        .Contant > #Rooms4 p i {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .Contant > .Rooms5 {
+    margin: 32px 8px;
+}
+
+.Contant > .Rooms5 .address,
+.Contant > .Rooms5 .Mobile_no,
+.Contant > .Rooms5 .email {
+    font-size: 16px; /* Optional, adjust font size */
+}
+
+.Contant > .Rooms5 i {
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+@media (max-width: 576px) {
+    .Contant > .Rooms5 .col-12 {
+        text-align: center; /* Ensure text is centered on small screens */
+    }
+}
+
+.Contant > .Rooms6 {
+    padding: 16px;
+}
+
+.Contant > .Rooms6 h1 {
+    margin: 0px;
+    font-size: 2rem;  /* Optional: adjust the font size */
+}
+
+.Contant > .Rooms6 p {
+    font-size: 1.2rem; /* Optional: adjust the font size for the paragraph */
+}
+
+/* Adjust font size and layout for small screens */
+@media (max-width: 576px) {
+    .Contant > .Rooms6 h1 {
+        font-size: 1.5rem;
+    }
+
+    .Contant > .Rooms6 p {
+        font-size: 1rem;
+    }
+}
+
+.Contant > .Rooms7 {
+    padding: 8px;
+}
+
+.Contant > .Rooms7 img {
+    width: 100%; /* Make images responsive */
+    height: auto; height: 500px;
+}
+
+.Contant > .Rooms7 .Half1 {
+    position: relative;
+    width: 100%;
+    /* Fixed height for .Half1 image */
+}
+
+.Contant > .Rooms7 .Half1 p {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.Contant > .Rooms7 .Half2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px; /* Add some space between Half1 and Half2 */
+}
+
+.Contant > .Rooms7 .Half2 img {
+    width: 48%; /* Adjust image width */
+    height: 240px; /* Fixed height for equal size images */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.Contant > .Rooms7 .Half2_1_1,
+.Contant > .Rooms7 .Half2_1_2,
+.Contant > .Rooms7 .Half2_2_1,
+.Contant > .Rooms7 .Half2_2_2 {
+    position: relative;
+}
+
+.Contant > .Rooms7 .Half2_1_1 p,
+.Contant > .Rooms7 .Half2_1_2 p,
+.Contant > .Rooms7 .Half2_2_1 p,
+.Contant > .Rooms7 .Half2_2_2 p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+    .Contant > .Rooms7 .Half1 p {
+        font-size: 24px; /* Smaller font size on mobile */
+    }
+
+    .Contant > .Rooms7 .Half2 {
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center; /* Center the images */
+    }
+
+    .Contant > .Rooms7 .Half2 img {
+        width: 90%; /* Make images a bit smaller on mobile */
+        height: 200px; /* Adjust the height for mobile devices */
+    }
+
+    .Contant > .Rooms7 .Half2_1_1 p,
+    .Contant > .Rooms7 .Half2_1_2 p,
+    .Contant > .Rooms7 .Half2_2_1 p,
+    .Contant > .Rooms7 .Half2_2_2 p {
+        font-size: 14px; /* Smaller font size for text on mobile */
+    }
+}
+
+
+.Contant > .Rooms8 {
+    background-color: #808080;
+    color: white;
+}
+
+.Contant > .Rooms8 input,
+.Contant > .Rooms8 button {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.Contant > .Rooms8 button {
+    width: auto; /* Reset width */
+    background-color: rgb(233, 128, 128);
+}
+
+.Contant > .Rooms8 button:hover {
+    background-color: darkgray;
+}
+
+.Contant > .Rooms8:hover {
+    background-color: black;
+}
+
+#Rooms9 {
+    background-color: #f8f9fa;
+    padding: 32px 16px;
+}
+
+#Rooms9 input,
+#Rooms9 button {
+    font-size: 16px;
+    padding: 14px;
+}
+
+#Rooms9 input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#Rooms9 button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: black;
+    color: white;
+    width: 100%; /* Ensure button takes full width on mobile */
+}
+
+#Rooms9 button:hover {
+    background-color: darkgray;
+}
+
+#Rooms9 .form-group {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    #Rooms9 input {
+        width: 100%; /* Make the input fields full width on mobile */
+    }
+
+    #Rooms9 button {
+        width: 100%; /* Make the button full width on mobile */
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h3 {
+    padding: 0;
+    margin: 0;
+}
+
+footer .icons i {
+    margin: 0 15px; /* Space between the icons */
+}
+
+@media (max-width: 767px) {
+    footer .icons i {
+        margin: 0 10px; /* Reduce space between icons on mobile */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light" id="maindiv">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Rooms1">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Rooms4">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Rooms9">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Rooms9" >Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <div id="Rooms">
+        <img src="./img1.jpg" alt="Room Image">
+        <div class="on-img">
+            <div class="Hotel-Name">
+                <p>Mia-Recedency</p>
+            </div>
+            <div class="Details">
+                <form action="" class="form">
+                    <div class="form-container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="checkin">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Check In
+                                </label>
+                                <input type="text" id="checkin" placeholder="DD MM YY" name="Checkin">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="checkout">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Check Out
+                                </label>
+                                <input type="text" id="checkout" placeholder="DD MM YY" name="Checkout">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-12 col-md-6">
+                                <label for="adults">
+                                    <i class="fa-solid fa-person"></i>
+                                    Adults
+                                </label>
+                                <input type="number" value="1" name="Adults" min="1" max="6" id="adults">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="kids">
+                                    <i class="fa-solid fa-child-reaching"></i>
+                                    Kids
+                                </label>
+                                <input type="number" value="0" name="Kids" min="0" max="6" id="kids">
+                            </div>
+                        </div>
+
+                        <button class="Button" type="submit">
+                            <span><i class="fa-solid fa-magnifying-glass"></i> Search Availability</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Contant">
+        <div class="container mt-4" id="Rooms1">
+            <h1 class="text-center">Rooms</h1>
+            <p class="text-center">Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+        </div>
+        
+        <div class="container mt-4" id="Rooms2">
+            <div class="row g-3">
+                <!-- Check In -->
+                <div class="col-12 col-md-3">
+                    <label for="checkin">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Check in
+                    </label>
+                    <input type="text" class="form-control" id="checkin" placeholder="DD MM YY" name="Check in">
+                </div>
+        
+                <!-- Check Out -->
+                <div class="col-12 col-md-3">
+                    <label for="checkout">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Check Out
+                    </label>
+                    <input type="text" class="form-control" id="checkout" placeholder="DD MM YY" name="Check out">
+                </div>
+        
+                <!-- Adults -->
+                <div class="col-12 col-md-2">
+                    <label for="adults">
+                        <i class="fa-solid fa-person"></i>
+                        Adults
+                    </label>
+                    <input type="number" class="form-control" id="adults" value="1" name="Adults" min="1" max="6">
+                </div>
+        
+                <!-- Kids -->
+                <div class="col-12 col-md-2">
+                    <label for="kids">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        Kids
+                    </label>
+                    <input type="number" class="form-control" id="kids" value="0" name="Kids" min="0" max="6">
+                </div>
+        
+                <!-- Search Button -->
+                <div class="col-12 col-md-2 d-flex align-items-end">
+                    <button class="btn btn-dark w-100">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-4" id="Rooms3">
+            <div class="row g-3">
+                <!-- Single Room -->
+                <div class="col-12 col-md-4">
+                    <div class="img1">
+                        <img src="./Singleroom.jpg" alt="Single Room" class="img-fluid">
+                        <div class="img1_1">
+                            <h1>Singleroom</h1>
+                            <h4>From $99</h4>
+                            <p>Single Bed</p>
+                            <p>15m<sup>2</sup></p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                            </p>
+                            <button class="btn btn-dark w-100">Choose Room</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Double Room -->
+                <div class="col-12 col-md-4">
+                    <div class="img2">
+                        <img src="./DoubleRoom.jpg" alt="Double Room" class="img-fluid">
+                        <div class="img1_2">
+                            <h1>DoubleRoom</h1>
+                            <h4>From $149</h4>
+                            <p>Queen-Size Bed</p>
+                            <p>25m<sup>2</sup></p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-tv"></i>
+                            </p>
+                            <button class="btn btn-dark w-100">Choose Room</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Deluxe Room -->
+                <div class="col-12 col-md-4">
+                    <div class="img3">
+                        <img src="./DelexRoom.jpg" alt="Deluxe Room" class="img-fluid">
+                        <div class="img1_3">
+                            <h1>Deluxe Room</h1>
+                            <h4>From $199</h4>
+                            <p>King-Size Bed</p>
+                            <p>40m<sup>2</sup></p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-tv"></i>
+                                <i class="fa-solid fa-wine-glass-empty"></i>
+                                <i class="fa-solid fa-utensils"></i>
+                            </p>
+                            <button class="btn btn-dark w-100">Choose Room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="Rooms4" class="container mt-4">
+            <div class="row">
+                <!-- About Section (Left Half) -->
+                <div class="col-12 col-md-6">
+                    <div class="Half1">
+                        <h1>About</h1>
+                        <h4>
+                            Our hotel is one of a kind. It is truly amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </h4>
+                        <br>
+                        <p>
+                            We Accept:
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-cc-amazon-pay"></i>
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Image Section (Right Half) -->
+                <div class="col-12 col-md-6">
+                    <div class="Half2">
+                        <img src="./Maldives.jpg" alt="Maldives" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="Rooms5 container mt-4">
+            <div class="row">
+                <!-- Address -->
+                <div class="col-12 col-md-4 text-center mb-3">
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot" style="color: #63E6BE;"></i>
+                        20039-Chandakavari-Maldive
+                    </div>
+                </div>
+        
+                <!-- Mobile Number -->
+                <div class="col-12 col-md-4 text-center mb-3">
+                    <div class="Mobile_no">
+                        <i class="fa-solid fa-phone" style="color: #63E6BE;"></i>
+                        +91 6302229317
+                    </div>
+                </div>
+        
+                <!-- Email -->
+                <div class="col-12 col-md-4 text-center mb-3">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope" style="color: #63E6BE;"></i>
+                        mukesh.vommu318@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Rooms6 container text-center mt-4">
+            <h1>Our Hotels</h1>
+            <p>You can find our hotels anywhere in the world:</p>
+        </div>
+        
+
+        <div class="Rooms7 container mt-4">
+            <div class="row">
+                <!-- First Half Section -->
+                <div class="col-12 col-md-6">
+                    <div class="Half1 position-relative">
+                        <img src="./Goa.jpg" alt="" class="img-fluid">
+                        <p class="position-absolute">Goa</p>
+                    </div>
+                </div>
+        
+                <!-- Second Half Section -->
+                <div class="col-12 col-md-6">
+                    <div class="Half2">
+                        <div class="Half2_1 d-flex">
+                            <div class="Half2_1_1 position-relative">
+                                <img src="./Hyderabad.jpg" alt="" class="img-fluid">
+                                <p class="position-absolute">Hyderabad</p>
+                            </div>
+                            <div class="Half2_1_2 position-relative">
+                                <img src="./Bankock.jpg" alt="" class="img-fluid">
+                                <p class="position-absolute">Bangkok</p>
+                            </div>
+                        </div>
+        
+                        <div class="Half2_2 d-flex">
+                            <div class="Half2_2_1 position-relative">
+                                <img src="./Bangalore.jpg" alt="" class="img-fluid">
+                                <p class="position-absolute">Bangalore</p>
+                            </div>
+                            <div class="Half2_2_2 position-relative">
+                                <img src="./Mumbai.jpg" alt="" class="img-fluid">
+                                <p class="position-absolute">Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Rooms8 container py-5">
+            <h1>Get The Best Offers First</h1>
+            <p>Join our News Letter</p>
+            <form class="d-flex flex-column">
+                <label for="email" class="mb-2">E-mail</label>
+                <input type="email" id="email" class="form-control mb-3" placeholder="Enter Your Email Address">
+                <button type="button" class="btn btn-danger">Subscribe</button>
+            </form>
+        </div>
+        
+        <div id="Rooms9" class="container py-5">
+            <h1>Contact</h1>
+            <p>If you have any questions, do not hesitate to ask them.</p>
+            <i class="fa-solid fa-location-dot" style="color: #63E6BE;"></i>
+            <span>20039-Chandakavari-Mladives</span>
+            <br>
+            <i class="fa-solid fa-phone" style="color: #63E6BE;"></i>
+            <span>Mobile_No: +91 6302229317</span>
+            <br>
+            <i class="fa-solid fa-envelope" style="color: #63E6BE;"></i>
+            <span>Email : mukesh.vommu318@gmail.com</span>
+        
+            <form action="" class="mt-4">
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="email" class="form-control" placeholder="E-Mail">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Message">
+                </div>
+                <button type="submit" class="btn btn-dark">SEND MESSAGE</button>
+            </form>
+        </div>
+        
+        <footer class="bg-dark text-white py-5">
+            <h3 class="text-center mb-4">Find Us On</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-snapchat fa-2xl"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+    </div>
+    <!-- Include Bootstrap JS and dependencies (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
