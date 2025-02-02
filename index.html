@@ -10,24 +10,88 @@
     <style>
                 /* Custom styles for Book Now button */
         
-        
-        #maindiv{
-            padding: 0px;
-            
-        }
-        .navbar-nav .nav-link:hover {
-            background-color: #ddd;  /* Change this color as per your preference */
-            color: black;  /* Optional: Change text color on hover */
-            border-radius: 4px;  /* Optional: Add rounded corners */
-        }
+        .navbar {
+    background-color:#63E6BE; /* Green background */
+    padding: 0.8rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        /* Optional: Adjust the Book Now button hover effect */
-        .navbar-nav .nav-link:hover {
-            background-color:#63E6BE;  /* Same color as the original Book Now button */
-        }
-        .navbar-nav .nav-link{
-            color: black;
-        }
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 0.5rem 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #dff0d8; /* Light green hover effect */
+    text-decoration: underline;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: #f1f1f1;
+}
+
+/* Book Now button styles */
+.book_now {
+    background-color:aqua;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.book_now:hover {
+    background-color: #dff0d8;
+    color: #4CAF50;
+}
+
+/* Float right for Book Now */
+.navbar ul li[style="float:right"] {
+    margin-left: auto;
+}
+
+/* Responsive styles using Bootstrap */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .book_now {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+        
+        
 
 
         #Rooms {
@@ -361,29 +425,17 @@ footer .icons i {
     </style>
 </head>
 <body>
-    <div class="navbar navbar-expand-lg navbar-light bg-light" id="maindiv">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Rooms1">Rooms</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Rooms4">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Rooms9">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Rooms9" >Book Now</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
+
+    <div class="navbar">
+        <ul>
+             <li><a href="#" class="logo">Logo </a></li>
+             <li><a href="#Rooms1">Rooms</a></li>
+             <li><a href="#Rooms4">About</a></li>
+             <li><a href="#Rooms9">Contact</a></li>
+             <li style="float:right"><a href="#Rooms9" class="book_now">Book Now</a></li>
+        </ul>
+     </div>
+                
     
 
     <div id="Rooms">
